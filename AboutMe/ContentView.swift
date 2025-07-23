@@ -16,10 +16,10 @@ struct ContentView: View {
             
             VStack(spacing: 20.0) {
                 
-                Image("NikkiAboutMe.png")
+                Image("NikkiAboutMe")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(100)
+                    .cornerRadius(80)
                 
                 Text("Nikki Ranabhat")
                     .font(.largeTitle)
@@ -37,10 +37,10 @@ struct ContentView: View {
                     .foregroundColor(Color.black)
                     .padding(2.0)
                 
-                Image("placement")
+                Image("PASTA")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(100)
+                    .cornerRadius(80)
             }
             .padding()
             .background(Rectangle() .foregroundColor(.white))
