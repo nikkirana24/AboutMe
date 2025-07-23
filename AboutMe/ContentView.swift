@@ -9,13 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        ZStack {
+            Color(red: 0.3, green: 0.7, blue: 0.9)
+                .ignoresSafeArea()
+            
+            VStack(spacing: 20.0) {
+                
+                Image("NikkiAboutMe.png")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(100)
+                
+                Text("Nikki Ranabhat")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.3, green: 0.6, blue: 0.9))
+                    .multilineTextAlignment(.center)
+                
+                Text("DIVA!")
+                    .fontWeight(.light)
+                    .foregroundColor(Color(red: 0.3, green: 0.6, blue: 0.9))
+                
+                Text("Hello! This is a small about me page. I like to cook, and one of my favorite dishes to make is pasta.")
+                    .font(.body)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.black)
+                    .padding(2.0)
+                
+                Image("placement")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(100)
+            }
+            .padding()
+            .background(Rectangle() .foregroundColor(.white))
+            .cornerRadius(30)
+            .padding()
         }
-        .padding()
+        .padding(0.0)
     }
 }
 
